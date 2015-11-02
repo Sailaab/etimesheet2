@@ -1,0 +1,17 @@
+.timesheet(layout='row')
+  span(flex='')
+  div(layout='column')
+    table(border=1)
+      tr
+        th Project Title
+        th Time Taken
+        th Task
+        th Added By
+
+      tr(ng-repeat='dailyLog in dailyLogs')
+        td {{dailyLog.pname}}
+        td {{dailyLog.time +'hrs'}}
+        td {{dailyLog.description}}
+        td {{dailyLog.user}}
+  span(flex='')
+

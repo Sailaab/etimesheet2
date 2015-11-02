@@ -1,0 +1,13 @@
+.leave(layout='row')
+  span(flex='') 
+    table
+      tr
+        th Start Date
+        th End Date
+        th Leave Reason
+        th Employee
+      tr(ng-repeat='leaveRequest in leaveRequests')
+        td {{leaveRequest.startDate}}
+        td {{leaveRequest.endDate}}
+        td {{leaveRequest.reason}}
+        td {{leaveRequest.user}}
